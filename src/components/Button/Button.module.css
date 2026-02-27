@@ -1,0 +1,43 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: filter 0.15s;
+}
+
+.btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.btn:not(:disabled):hover {
+    filter: brightness(1.15);
+}
+
+.btn:not(:disabled):active {
+    filter: brightness(0.92);
+}
+
+.primary {
+    background: #4f5bd5;
+    color: #fff;
+}
+
+.danger {
+    background: #3a2020;
+    color: #e85353;
+}
+
+.ghost {
+    background: transparent;
+    color: #999;
+}
+
+.ghost:not(:disabled):hover {
+    color: #fff;
+    filter: none;
+}
