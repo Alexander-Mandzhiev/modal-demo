@@ -41,5 +41,5 @@ src/
 
 ### GenericModal — портал поверх всего
 
-Модалка рендерится через `createPortal` в `document.body` с `z-index: 2147483647`,
-что гарантирует отображение поверх любых элементов, включая `popover` и `<dialog>`.
+Модалка рендерится через `createPortal` в `document.body` с `z-index: 9999`,
+чтобы отображаться поверх типичных оверлеев (popover, dialog и т.п.).
